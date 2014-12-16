@@ -7,4 +7,4 @@ echo "deb http://deb.theforeman.org/ plugins 1.7" >> /etc/apt/sources.list.d/for
 wget -q http://deb.theforeman.org/pubkey.gpg -O- | apt-key add -
 apt-get update && apt-get -y install foreman-installer
 
-foreman-installer
+foreman-installer --foreman-admin-password=vagrantlab
